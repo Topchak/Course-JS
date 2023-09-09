@@ -1,4 +1,4 @@
-"use strict"
+'use strict';
 let num = 50;
 
 // while (num <= 55) {
@@ -8,24 +8,24 @@ let num = 50;
 
 do {
   console.log(num);
-  num++
+  num++;
 } while (num <= 55);
 
 for (let i = 1; i <= 8; i++) {
-  console.log(i)
+  console.log(i);
 }
 
 for (i = 0; i <= 3; i++) {
   console.log(i);
   for (k = 0; k <= 3; k++) {
-    console.log(k)
+    console.log(k);
   }
 }
 
 for (i = 0; i < 1; i++) {
   let stars = '';
   for (k = 7; k > 0; k--) {
-    console.log(stars += '*')
+    console.log(stars += '*');
   }
 }
 
@@ -37,7 +37,7 @@ for (i = 1; i < 7; i++) {
   }
   result += '\n';
 }
-console.log(result)
+console.log(result);
 
 
 first: for (i = 0; i < 3; i++) {
@@ -47,7 +47,7 @@ first: for (i = 0; i < 3; i++) {
     console.log(`level second ${k}`);
 
     for (j = 0; j < 3; j++) {
-      if (j === 2) break first
+      if (j === 2) break first;
       console.log(`level third ${j}`);
     }
   }
@@ -55,7 +55,7 @@ first: for (i = 0; i < 3; i++) {
 
 for (let i = 2; i <= 10; i++) {
   if (i % 2) {
-    console.log(i - 1)
+    console.log(i - 1);
   }
 }
 let i = 2;
@@ -86,10 +86,10 @@ function fifthTask() {
   }
 
   // Не трогаем
-  console.log(arrayOfNumbers)
+  console.log(arrayOfNumbers);
   return arrayOfNumbers;
 }
-fifthTask()
+fifthTask();
 
 function firstTask() {
   // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
@@ -98,15 +98,15 @@ function firstTask() {
 
   // Пишем решение вот тут
   for (let i = 0; i < arr.length; i++) {
-    result.push(arr[i])
+    result.push(arr[i]);
   }
 
 
   // Не трогаем
-  console.log(result)
+  console.log(result);
   return result;
 }
-firstTask()
+firstTask();
 
 function secondTask() {
   // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
@@ -114,7 +114,7 @@ function secondTask() {
 
   // Пишем решение вот тут
 
-  console.log(data)
+  console.log(data);
 
 
   // for (let i = 0; i < data.length; i++) {
@@ -125,20 +125,20 @@ function secondTask() {
   //     data[i] = `${data[i]} - done`
   //   }
   // }
-  console.log(data)
+  console.log(data);
 
   return data;
-};
+}
 // Не трогаем
 
-secondTask()
+secondTask();
 
 function thirdTask() {
   const data = [5, 10, 'Shopping', 20, 'Homework'];
   const result = [];
   // счет с еденицы, если 1 <=data.legth; i++
   for (let i = 1; i <= data.length; i++) {
-    result[i - 1] = data[data.length - i]
+    result[i - 1] = data[data.length - i];
   }
   return result;
 }
@@ -154,19 +154,19 @@ for (let i = 0; i <= lines; i++) {
   // Внутренний цикл j отвечает за добавление пробелов перед звездочками.
   // Количество пробелов уменьшается с увеличением номера строки (i).
   for (let j = 0; j < lines - i; j++) {
-    result += " ";
+    result += ' ';
   }
 
   // Второй внутренний цикл j отвечает за добавление звездочек.
   // Количество звездочек увеличивается с увеличением номера строки (i).
   // Формула 2 * i + 1 используется для определения количества звездочек в строке.
   for (let j = 0; j < 2 * i + 1; j++) {
-    result += "*";
+    result += '*';
   }
 
   // После добавления пробелов и звездочек в текущей строке, добавляем символ переноса строки "\n".
   // Это переход к следующей строке пирамиды.
-  result += "\n";
+  result += '\n';
 }
 
 // В итоге, переменная result содержит рисунок пирамиды.
