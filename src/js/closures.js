@@ -111,3 +111,6 @@ const counter = createCounter();
 counter(); // Выведет 1
 counter(); // Выведет 2
 counter(); // Выведет 3
+
+
+
