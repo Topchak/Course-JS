@@ -120,3 +120,49 @@ const personalMovieDB = {
 // personalMovieDB.writeYourGenres();
 // personalMovieDB.toggleVisibleMyDB();
 // console.log(personalMovieDB.privat);
+
+
+let x = 5;
+//prefix
+console.log(++x);
+
+//postfix
+console.log(x++);
+
+// пустой массив == '' если складывать пустой массив
+console.log([] + false - null + true);
+
+// если проводить математический операции с НЕ числами = NaN
+
+
+
+console.log(null || 2 && 3 || 4);
+// 2&&3 = 3(&&) - last true
+// null || 3 = 3 (return true)
+// 3 || 4 = 3 - first truu(||)
+
+// Оператор && запинается на false
+// Оператор && имеет более высокий приоритет, чем ||
+// Оператор && выполняется слева направо и возвращает последнее истинное значение или первое ложное значение.
+
+
+// Оператор || запинается на true
+// Оператор || также выполняется слева направо и возвращает первое истинное значение или последний операнд, если все ложные. 
+console.log(2 && 1 || null && 0 && undefined );
+
+
+let aa = [1, 2, 3];
+let b = [1, 2, 3];
+console.log(aa == b);
+//маленькие буквы идут после больших букв в лексикографическом порядке a > A!
+console.log('Ёжик' < 'яблоко'); //true
+
+
+console.log(0 || '' || 2 || undefined || true || false); //2
+console.log(0 || '' || undefined || false); //false
+
+
+
+
+
+console.log(2 && 1 && null && 0 && undefined); // null
