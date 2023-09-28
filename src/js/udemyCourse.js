@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form = document.querySelector('.add'),
         inputForm = form.querySelector('.adding__input'),
         inputCheckbox = form.querySelector('.input-checkbox');
-        
+
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const deleteAdv = (arr) => {
-      arr.forEach(el => {
+        arr.forEach(el => {
             el.remove();
         });
     };
@@ -105,5 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+function hero(bullets, dragons) {
+    return bullets < dragons * 2 ? false : true;
+}
 
-
+console.log(hero(10, 5));
+console.log(hero(7, 4));
